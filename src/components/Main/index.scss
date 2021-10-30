@@ -1,0 +1,54 @@
+main {
+  background-color: $white;
+  border-radius: 16px 16px 0 0;
+  padding: 1.5rem;
+}
+
+.main {
+  &__container {
+    &--mobile-bottom {
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 16px;
+      background-color: $very-dark-cyan;
+    }
+
+    &-text {
+        font-weight: 700;
+        padding: 1rem 0;
+      
+        &--dark {
+          color: $dark-gray-cyan;
+        }
+
+        &--dark-small {
+          font-size: 1rem;
+          color: $dark-grayish-cyan;
+        }
+      
+        &--light {
+          color: $light-grayish-cyan;
+        }
+
+        &-bill {
+          color: $strong-cyan;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+    }
+
+    &--amount-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 1.3;
+    }
+
+    &--buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+}
