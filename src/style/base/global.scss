@@ -1,5 +1,70 @@
-
-h1 {
+body {
+  background: $light-gray-cyan;
   font-family: $font-family;
-  color: $strong-cyan;
+  font-size: $font-size;
+}
+
+.button {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+
+  &--tip {
+    background-color: $very-dark-cyan;
+    color: $white;
+  }
+
+  &--reset {
+    width: 100%;
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: $light-cyan;
+    color: $very-dark-cyan;
+    transition: background-color ease-in-out 250ms;
+  }
+}
+
+.input {
+  appearance: none;
+  border: 1px solid transparent;
+  outline: none;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  background-color: $light-grayish-cyan;
+  color: $very-dark-cyan;
+  font-weight: 700;
+  text-align: right;
+  cursor: pointer;
+
+  &--bill {
+    background-image: url('../../images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+  }
+
+  &--people {
+    background-image: url('../../images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+  }
+
+  &--custom {
+    background-color: $light-grayish-cyan;
+    color: $very-dark-cyan;
+    font-weight: 700;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $strong-cyan;
+  }
 }
