@@ -5,7 +5,7 @@ const TipButton = () => {
   return (
     <>
     {tipButtonAmount.map((item) => (
-      <div className="button button--tip" key={item.id}>{item.name}</div>
+      <button className="button button--tip" type="button" key={item.id}>{item.name}</button>
     ))}
   </>
   );

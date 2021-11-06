@@ -4,6 +4,10 @@ body {
   font-size: $font-size;
 }
 
+:focus-visible {
+  outline: 3px dotted $focus-visible;
+}
+
 .button {
   display: block;
   border: none;

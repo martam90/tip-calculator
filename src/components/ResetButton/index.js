@@ -3,7 +3,7 @@ import React from 'react';
 const ResetButton = () => {
   return (
     <>
-      <button className="button button--reset">Reset</button>
+      <button className="button button--reset" type="reset">Reset</button>
     </>
   );
 }
