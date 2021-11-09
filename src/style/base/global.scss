@@ -4,6 +4,10 @@ body {
   font-size: $font-size;
 }
 
+:focus-visible {
+  outline: 3px dotted $focus-visible;
+}
+
 .button {
   display: block;
   border: none;
@@ -49,12 +53,14 @@ body {
     background-image: url('../../images/icon-dollar.svg');
     background-repeat: no-repeat;
     background-position: 2% 50%;
+    margin: 1rem 0;
   }
 
   &--people {
     background-image: url('../../images/icon-person.svg');
     background-repeat: no-repeat;
     background-position: 2% 50%;
+    margin: 1rem 0;
   }
 
   &--custom {
