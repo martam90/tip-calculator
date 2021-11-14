@@ -1,0 +1,7 @@
+$medium: 60em;
+
+@mixin medium {
+  @media screen and(min-width: $medium) {
+    @content;
+  }
+}

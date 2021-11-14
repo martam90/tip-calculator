@@ -3,12 +3,12 @@ import logo from '../../images/logo.svg';
 
 const Header = () => {
   return (
-    <header>
+    <header className="container">
       <a href="/">
         <img src={logo} alt="Spiltter logo"></img>
       </a>
     </header>
   );
-}
+};
 
 export default Header;
