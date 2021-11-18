@@ -2,6 +2,13 @@ main {
   background-color: $white;
   border-radius: 16px 16px 0 0;
   padding: 1.5rem;
+
+  @include medium {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 2rem;
+  }
 }
 
 .main {
@@ -11,6 +18,15 @@ main {
       margin-top: 2rem;
       border-radius: 16px;
       background-color: $very-dark-cyan;
+
+      @include medium {
+        margin-top: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem 2rem;
+      }
     }
 
     &-text {
@@ -18,6 +34,10 @@ main {
       
         &--dark {
           color: $dark-gray-cyan;
+
+          @include medium {
+            font-size: 1.25rem;
+          }
         }
 
         &--dark-small {
@@ -27,6 +47,10 @@ main {
       
         &--light {
           color: $light-grayish-cyan;
+
+          @include medium {
+            font-size: 1.25rem;
+          }
         }
 
         &-bill {
